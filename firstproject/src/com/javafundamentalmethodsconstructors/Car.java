@@ -30,7 +30,7 @@ public class Car {
 		c2.carInfo();
 
 		System.out.println("main method ended !! ");
-
+ 
 	}
 
 	void carInfo() {
@@ -39,5 +39,6 @@ public class Car {
 		System.out.println("price of the car : " + price);
 		System.out.println("color of the car : " + color);
 
+		
 	}
 }

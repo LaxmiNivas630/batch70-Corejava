@@ -12,14 +12,13 @@ public class Student1 {
 //	parameterized constructors
 	Student1(String sid, String sname, int sage) {
 		System.out.println(" parameterized constructor called ");
-		this.sid=sid;
-		this.sname=sname;
-		this.sage=sage;
-		
+		this.sid = sid;
+		this.sname = sname;
+		this.sage = sage;
 
 	}
 
-	public static void main(String [] args) {
+	public static void main(String[] args) {
 		System.out.println("main method started ! ");
 
 		Student1 s1 = new Student1("JFS-B70-422", "Sonu", 22);
