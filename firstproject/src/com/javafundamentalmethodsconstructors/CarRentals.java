@@ -26,24 +26,22 @@ public class CarRentals {
 
 	public static void main(String[] args) {
 		System.out.println("main method started !");
-		
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+
 		CarRentals c1 = new CarRentals();
-		
+
 		welcome();
-		
-		System.out.println(c1.dailyPrice());
-		System.out.println(c1.tripCost(n));
-		System.out.println(c1.carOfTheInsurance());
-		System.out.println(c1.carOfTheInsurance()+c1.tripCost(n));
-		
-		
+
+		System.out.println("Perday cost :" + c1.dailyPrice());
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Total No. Of days");
+		int n = sc.nextInt();
+
+		System.out.println("Cost : " + c1.tripCost(n));
+		System.out.println("Car Insurance Amount : " + c1.carOfTheInsurance());
+		System.out.println("Total Amount : " + (c1.carOfTheInsurance() + c1.tripCost(n)));
+
 		System.out.println("main method ended !!");
-		
-		
-		
-		
 
 	}
 

@@ -14,26 +14,23 @@ public class Movie {
 	}
 
 	Movie(String producer, String director) {
+		this();
 		System.out.println("Parameterized-1 constructor called ! ");
 		this.producer = producer;
 		this.director = director;
 	}
 
 	Movie(Movie m, String hero, double budget) {
+		this(m.producer, m.director);
 		System.out.println("Parameterized-2 constructor called ! ");
 		this.hero = hero;
 		this.budget = budget;
-		this.producer = m.producer;
-		this.director = m.director;
-
+		
 	}
 
 	Movie(Movie m, String heroine, String MovieName) {
+		this(m,m.hero, m.budget);
 		System.out.println("Parameterized-3 constructor called ");
-		this.budget = m.budget;
-		this.director = m.director;
-		this.producer = m.producer;
-		this.hero = m.hero;
 		this.heroine = heroine;
 		this.MovieName = MovieName;
 
