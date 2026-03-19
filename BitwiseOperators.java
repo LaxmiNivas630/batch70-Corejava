@@ -36,6 +36,21 @@ public class BitwiseOperators {
 		System.out.println(false | true);// true
 		System.out.println(false | false);// false
 
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		System.out.println(true ^ true);// false
+		System.out.println(true ^ false);// true
+		System.out.println(false ^ true);// true
+		System.out.println(false ^ false);// false
+		
+		System.out.println(72 ^ 10);//66
+		System.out.println(36 ^ 4);//32
+		System.out.println(65 ^ 6);//71
+		System.out.println(24 ^ 3);//27
+		
+		System.out.println(~10);//(~10) = -(n+1) = -(10+1) 
+		System.out.println(~65);//-(65+1) = -66
+
+
 
 	}
 
